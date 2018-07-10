@@ -1,0 +1,15 @@
+--- 
+applications: 
+  - 
+    buildpack: java_buildpack
+    instances: 1
+    memory: 750M
+    name: quicklinks
+    path: C:\Users\jerry.hagen\Documents\GitHub\quicklinks\build\libs\quicklinks-0.0.1-SNAPSHOT.jar
+    services: 
+      - cw-portal-config-server
+      - cw-portal-service-registry
+      - quicklinks-mysql
+    timeout: 180
+    env:
+      APP_VERSION: blue
